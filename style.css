@@ -58,3 +58,7 @@ body {
     color: rgb(95, 101, 105);
     vertical-align: top;
 }
+
+.expense:hover > * {
+    color: rgb(51, 53, 54);
+}
