@@ -35,7 +35,7 @@ body {
 }
 
 .date {
-    background: rgba(15, 185, 236, 0.623);
+    background: rgba(15, 185, 236, .6);
 }
 
 .date .td, .th {
@@ -52,4 +52,9 @@ body {
 
 .expense + .expense {
     border-top: 1px solid rgba(15, 185, 236, .3); 
+}
+
+.expense .td {
+    color: rgb(95, 101, 105);
+    vertical-align: top;
 }
