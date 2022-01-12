@@ -16,34 +16,40 @@ body {
     margin: 24px 0;
     font-size: 1.5rem;
 }
+
 .table {
-    border-collapse: collapse;
-    width: 90%;
-}
-.th, .td {
     text-align: left;
+    border-collapse: collapse;
+}
+
+.td {
     padding: 16px 8px;
 }
 
-.tr {
-    border-bottom: 1px solid rgba(116, 116, 116, .3);
+.thead .tr {
+    border-bottom: 2px solid rgb(15, 185, 236);
 }
 
-.tbody .tr:nth-child(1) {
-    border-bottom: none;
-}
-
-.currency-value {
-    text-align: right;
-    font-family: monospace;
+.tr :first-child {
     white-space: nowrap;
 }
 
-@media (min-width: 400px){
-    .main {
-        width: 90%;
-    }
-    .table {
-        width: 40%;
-    }    
+.date {
+    background: rgba(15, 185, 236, 0.623);
+}
+
+.date .td, .th {
+    padding: 8px;
+}
+
+.price {
+    text-align: right;
+}
+
+.tr:last-child {
+    border-bottom: 1px solid rgba(15, 185, 236, .3);
+}
+
+.expense + .expense {
+    border-top: 1px solid rgba(15, 185, 236, .3); 
 }
