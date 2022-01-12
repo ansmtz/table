@@ -33,7 +33,7 @@ body {
     border-bottom: none;
 }
 
-.tr .td:nth-child(2) {
+.currency-value {
     text-align: right;
     font-family: monospace;
     white-space: nowrap;
