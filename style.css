@@ -3,14 +3,17 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: sans-serif;
 }
+
 .main {
     width: 80%;
     margin: 0 auto;
     padding: 32px 0;
 }
+
 .h1 {
     text-align: left;
     margin: 24px 0;
@@ -30,8 +33,12 @@ body {
     border-bottom: 2px solid rgb(15, 185, 236);
 }
 
-.tr :first-child {
+/* избавляемся от переносов числовых значений
+для удобочитаемости на маленьких экранах
+и выравниваем по правому краю */
+.price {
     white-space: nowrap;
+    text-align: right;
 }
 
 .date {
@@ -42,18 +49,19 @@ body {
     padding: 8px;
 }
 
-.price {
-    text-align: right;
-}
-
+/* для последнего ряда делаем рамку снизу */
 .tr:last-child {
     border-bottom: 1px solid rgba(15, 185, 236, .3);
 }
 
+/* для каждого ряда с покупкой рисуем верхнюю рамку
+только если их 2 или больше на день */
 .expense + .expense {
     border-top: 1px solid rgba(15, 185, 236, .3); 
 }
 
+
+/* вкусовщина - решил немного поиграть с контрастом в ячейках */
 .expense .td {
     color: rgb(95, 101, 105);
     vertical-align: top;
